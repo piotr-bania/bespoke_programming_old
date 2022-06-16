@@ -1,0 +1,75 @@
+/* ------------------------------ Fonts import ------------------------------ */
+@import url("https://use.typekit.net/pgw0ymf.css");
+/* ------------------------------ Variables ------------------------------ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 40px 80px;
+  background: #21272A;
+  color: #697077;
+  font-family: contralto-small, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #FFFFFF;
+  font-family: contralto-big, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+a {
+  font-family: contralto-small, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8A3FFC;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #D02670;
+}
+/*# sourceMappingURL=globals.css.map */
