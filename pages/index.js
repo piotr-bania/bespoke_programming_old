@@ -12,12 +12,24 @@ export default function Home() {
       </Head>
 
       <header>
-        <Image
-          src="/logo.svg"
-          alt="logo"
-          width={60}
-          height={60}
-        />
+        <nav>
+          <Image
+            src="/logo.svg"
+            alt="logo"
+            width={80}
+            height={80}
+          />
+          <li>
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Project</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Policy</a>
+          </li>
+        </nav>
       </header>
 
       <main>
@@ -26,7 +38,6 @@ export default function Home() {
         <h3>Header number 3.</h3>
         <h4>Header number 4.</h4>
         <p>This is a paragraph.</p>
-        <a href="#">Link</a>
       </main>
     </div>
   )

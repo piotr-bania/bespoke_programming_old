@@ -18,6 +18,7 @@ $white: #FFFFFF;
 html {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 body {
@@ -78,5 +79,36 @@ a {
 
   &:hover {
     color: $magenta;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    padding-left: 2vw;
+  }
+}
+
+button {
+  background: $magenta;
+  color: $white;
+  font-family: contralto-small, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $purple;
   }
 }
