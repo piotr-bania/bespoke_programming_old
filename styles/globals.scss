@@ -1,15 +1,16 @@
 /* ------------------------------ Fonts import ------------------------------ */
 @import url("https://use.typekit.net/pgw0ymf.css");
 
+
 /* ------------------------------ Variables ------------------------------ */
 $purple: #8A3FFC;
-$purpleLight: #B584FD;
 $magenta: #D02670;
-$green: #40FC8B;
-$darkGrey: #21272A;
-$midGrey: #697077;
+$background: #21272A;
+$darkGrey: #697077;
 $lightGrey: #D0D0D1;
 $white: #FFFFFF;
+$gradient: linear-gradient(90deg, rgba(138, 63, 252, 1) 0%, rgba(208, 38, 112, 1) 100%);
+$gradientBackground: linear-gradient(90deg, rgba(105, 112, 119, 0.7483368347338936) 0%, rgba(105, 112, 119, 0) 100%);
 
 * {
   box-sizing: border-box;
@@ -23,12 +24,12 @@ html {
 
 body {
   margin: 40px 80px;
-  background: $darkGrey;
-  color: $midGrey;
-  font-family: contralto-small, sans-serif;
-  font-weight: 400;
+  background: $background;
+  color: $lightGrey;
+  font-family: proxima-nova;
+  font-weight: 300;
   font-style: normal;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -36,10 +37,10 @@ h1,
 h2,
 h3,
 h4 {
-  color: $white;
-  font-family: contralto-big, sans-serif;
-  font-weight: 700;
+  font-family: contralto-big;
+  font-weight: 600;
   font-style: normal;
+  color: $white;
   line-height: 1.1;
   margin: 0;
 }
@@ -67,48 +68,65 @@ p {
 }
 
 a {
-  font-family: contralto-small, sans-serif;
-  font-weight: 600;
+  font-family: proxima-nova;
+  font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: $purple;
+  color: $lightGrey;
+  opacity: 0.5;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: $magenta;
+    color: $lightGrey;
+    opacity: 1;
   }
+
+  &:focus {
+    font-weight: 400;
+    color: $white;
+    opacity: 1;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
 }
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  background: $gradientBackground;
 
   a {
-    padding-left: 2vw;
+    padding: 0 1vw;
   }
 }
 
 button {
-  background: $magenta;
+  background: $gradient;
   color: $white;
-  font-family: contralto-small, sans-serif;
-  font-weight: 600;
+  font-family: proxima-nova;
+  font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border-radius: 4px;
-  padding: 12px 24px 8px;
+  width: 140px;
+  height: 60px;
+  opacity: 0.75;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: $purple;
+    background: $gradient;
+    opacity: 1;
   }
 }

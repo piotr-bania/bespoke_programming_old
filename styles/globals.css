@@ -2,8 +2,7 @@
 @import url("https://use.typekit.net/pgw0ymf.css");
 /* ------------------------------ Variables ------------------------------ */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,11 +14,11 @@ html {
 body {
   margin: 40px 80px;
   background: #21272A;
-  color: #697077;
-  font-family: contralto-small, sans-serif;
-  font-weight: 400;
+  color: #D0D0D1;
+  font-family: proxima-nova;
+  font-weight: 300;
   font-style: normal;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -27,10 +26,10 @@ h1,
 h2,
 h3,
 h4 {
-  color: #FFFFFF;
-  font-family: contralto-big, sans-serif;
-  font-weight: 700;
+  font-family: contralto-big;
+  font-weight: 600;
   font-style: normal;
+  color: #FFFFFF;
   line-height: 1.1;
   margin: 0;
 }
@@ -58,57 +57,61 @@ p {
 }
 
 a {
-  font-family: contralto-small, sans-serif;
-  font-weight: 600;
+  font-family: proxima-nova;
+  font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #8A3FFC;
+  color: #D0D0D1;
+  opacity: 0.5;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 a:hover {
-  color: #D02670;
+  color: #D0D0D1;
+  opacity: 1;
+}
+a:focus {
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(90deg, rgba(105, 112, 119, 0.7483368347) 0%, rgba(105, 112, 119, 0) 100%);
 }
-
 nav a {
-  padding-left: 2vw;
+  padding: 0 1vw;
 }
 
 button {
-  background: #D02670;
+  background: linear-gradient(90deg, rgb(138, 63, 252) 0%, rgb(208, 38, 112) 100%);
   color: #FFFFFF;
-  font-family: contralto-small, sans-serif;
-  font-weight: 600;
+  font-family: proxima-nova;
+  font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border-radius: 4px;
-  padding: 12px 24px 8px;
+  width: 140px;
+  height: 60px;
+  opacity: 0.75;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 button:hover {
-  background: #8A3FFC;
-}
-/*# sourceMappingURL=globals.css.map */
+  background: linear-gradient(90deg, rgb(138, 63, 252) 0%, rgb(208, 38, 112) 100%);
+  opacity: 1;
+}/*# sourceMappingURL=globals.css.map */
