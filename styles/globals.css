@@ -7,19 +7,20 @@
 
 html {
   padding: 0;
-  margin: 0;
+  margin: 40px 120px;
   list-style-type: none;
 }
 
 body {
-  margin: 40px 80px;
   background: #21272A;
   color: #D0D0D1;
   font-family: proxima-nova;
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-size: 18px;
   line-height: 1.4;
+  max-width: 1686px;
+  margin: auto;
 }
 
 h1,
@@ -58,7 +59,7 @@ p {
 
 a {
   font-family: proxima-nova;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 18px;
   letter-spacing: 1px;
@@ -73,7 +74,7 @@ a:hover {
   opacity: 1;
 }
 a:focus {
-  font-weight: 400;
+  font-weight: 300;
   color: #FFFFFF;
   opacity: 1;
 }
@@ -82,36 +83,60 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 50;
+  z-index: 100;
 }
-
-nav {
+header .logo {
+  cursor: pointer;
+}
+header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: linear-gradient(90deg, rgba(105, 112, 119, 0.7483368347) 0%, rgba(105, 112, 119, 0) 100%);
+  background: linear-gradient(90deg, rgba(105, 112, 119, 0.75) 0%, rgba(105, 112, 119, 0) 80%);
 }
-nav a {
+header nav li a {
   padding: 0 1vw;
 }
 
 button {
-  background: linear-gradient(90deg, rgb(138, 63, 252) 0%, rgb(208, 38, 112) 100%);
+  background: linear-gradient(90deg, rgba(138, 63, 252, 0.75) 0%, rgba(208, 38, 112, 0.75) 100%);
   color: #FFFFFF;
   font-family: proxima-nova;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 18px;
+  line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  width: 140px;
-  height: 60px;
-  opacity: 0.75;
+  padding: 20px 24px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 button:hover {
   background: linear-gradient(90deg, rgb(138, 63, 252) 0%, rgb(208, 38, 112) 100%);
-  opacity: 1;
+}
+
+.strip {
+  position: fixed;
+  width: 1px;
+  height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #21272A 100%);
+  opacity: 0.25;
+  z-index: 50;
+}
+
+.one {
+  left: 27.96875%;
+  top: 0;
+}
+
+.two {
+  left: 50%;
+  top: 0;
+}
+
+.three {
+  right: 27.96875%;
+  top: 0;
 }/*# sourceMappingURL=globals.css.map */

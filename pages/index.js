@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
 return (
@@ -12,27 +12,13 @@ return (
     <link rel="icon" href="/BespokeProgrammingLogo.svg" />
   </Head>
 
-  <header>
-    <Image className='logo' src="/LogoClosedShadow.svg" alt="logo" width={60} height={60} />
-    <nav>
-      <li>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Pricing</a>
-      </li>
-      <button>Contact</button>
-    </nav>
-  </header>
-
   <main>
-    <h1>Header number 1.</h1>
-    <h2>Header number 2.</h2>
-    <h3>Header number 3.</h3>
-    <h4>Header number 4.</h4>
-    <p>This is a paragraph.</p>
+    <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development.</h1>
+    <p>I am a web developer who builds custom web-applications right from consulting, development, maintenance and
+      support.</p>
+    <Link href="/quote"><button>Get A Free Quote</button></Link>
   </main>
+
 </div>
 )
 }

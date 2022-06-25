@@ -10,7 +10,8 @@ $darkGrey: #697077;
 $lightGrey: #D0D0D1;
 $white: #FFFFFF;
 $gradient: linear-gradient(90deg, rgba(138, 63, 252, 1) 0%, rgba(208, 38, 112, 1) 100%);
-$gradientBackground: linear-gradient(90deg, rgba(105, 112, 119, 0.7483368347338936) 0%, rgba(105, 112, 119, 0) 100%);
+$gradientFaded: linear-gradient(90deg, rgba(138, 63, 252, 0.75) 0%, rgba(208, 38, 112, 0.75) 100%);
+$gradientBackground: linear-gradient(90deg, rgba(105, 112, 119, 0.75) 0%, rgba(105, 112, 119, 0) 80%);
 
 * {
   box-sizing: border-box;
@@ -18,19 +19,20 @@ $gradientBackground: linear-gradient(90deg, rgba(105, 112, 119, 0.74833683473389
 
 html {
   padding: 0;
-  margin: 0;
+  margin: 40px 120px;
   list-style-type: none;
 }
 
 body {
-  margin: 40px 80px;
   background: $background;
   color: $lightGrey;
   font-family: proxima-nova;
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-size: 18px;
   line-height: 1.4;
+  max-width: 1686px;
+  margin: auto;
 }
 
 h1,
@@ -69,7 +71,7 @@ p {
 
 a {
   font-family: proxima-nova;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 18px;
   letter-spacing: 1px;
@@ -85,7 +87,7 @@ a {
   }
 
   &:focus {
-    font-weight: 400;
+    font-weight: 300;
     color: $white;
     opacity: 1;
   }
@@ -95,38 +97,69 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 50;
-}
+  z-index: 100;
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background: $gradientBackground;
+  .logo {
+    cursor: pointer;
+  }
 
-  a {
-    padding: 0 1vw;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: $gradientBackground;
+
+    li {
+      a {
+        padding: 0 1vw;
+      }
+    }
   }
 }
 
+
 button {
-  background: $gradient;
+  background: $gradientFaded;
   color: $white;
   font-family: proxima-nova;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 18px;
+  line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  width: 140px;
-  height: 60px;
-  opacity: 0.75;
+  padding: 20px 24px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     background: $gradient;
-    opacity: 1;
   }
+}
+
+// ------------------------------ Strips ------------------------------
+
+.strip {
+  position: fixed;
+  width: 1px;
+  height: 100vh;
+  background: linear-gradient(180deg, $white 0%, $background 100%);
+  opacity: 0.25;
+  z-index: 50;
+}
+
+.one {
+  left: 27.96875%;
+  top: 0;
+}
+
+.two {
+  left: 50%;
+  top: 0;
+}
+
+.three {
+  right: 27.96875%;
+  top: 0;
 }
