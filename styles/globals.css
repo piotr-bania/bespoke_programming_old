@@ -31,30 +31,29 @@ h4 {
   font-weight: 600;
   font-style: normal;
   color: #FFFFFF;
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
 h1 {
-  font-size: 4.209rem;
+  font-size: 6.854rem;
 }
 
 h2 {
-  font-size: 3.157rem;
+  font-size: 4.236rem;
 }
 
 h3 {
-  font-size: 2.369rem;
+  font-size: 2.618rem;
 }
 
 h4 {
-  font-size: 1.777rem;
+  font-size: 1.618rem;
 }
 
 p {
   font-size: 22px;
   line-height: 1.4;
-  margin: 0;
 }
 
 a {
@@ -80,6 +79,8 @@ a:focus {
 }
 
 header {
+  position: fixed;
+  width: calc(100% - 240px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,7 +128,7 @@ button:hover {
 }
 
 .one {
-  left: 27.96875%;
+  left: 27.96%;
   top: 0;
 }
 
@@ -137,6 +138,42 @@ button:hover {
 }
 
 .three {
-  right: 27.96875%;
+  right: 27.96%;
   top: 0;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 22.03%;
+  left: 5.93%;
+  top: 0;
+  background: linear-gradient(0deg, rgba(105, 112, 119, 0) 0%, rgb(105, 112, 119) 100%);
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: calc(100vh - 80px);
+}
+
+.div1 {
+  grid-area: 1/6/2/12;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10vh;
+}
+
+.div2 {
+  grid-area: 2/2/3/6;
+}
+
+.div3 {
+  grid-area: 2/11/3/13;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-transform: uppercase;
 }/*# sourceMappingURL=globals.css.map */
