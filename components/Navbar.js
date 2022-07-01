@@ -6,7 +6,7 @@ const Navbar = () => {
 return (
 <div>
     <header>
-        <Image className='logo' src="/LogoClosedShadow.svg" alt="logo" width={60} height={60} />
+        <Image className='logo' src="/svg/logo.svg" alt="logo" width={60} height={60} />
         <nav>
             <li>
                 <Link href="/"><a>Home</a></Link>

@@ -3,12 +3,15 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Canvas } from '@react-three/fiber'
-import SphereWireframed from '../public/model2/SphereWireframed'
+import SphereWireframed from '../public/models/sphereWireframed/SphereWireframed'
 import { OrbitControls } from '@react-three/drei'
 
 export default function Home() {
 return (
+
 <div className={styles.container}>
+
+  {/* ---------------------- Head ---------------------- */}
 
   <Head>
     <title>Bespoke Programming</title>
@@ -16,30 +19,72 @@ return (
     <link rel="icon" href="/logo.svg" />
   </Head>
 
-  <main className='parent'>
-    <div className="div1">
-      <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development.</h1>
-    </div>
-
-    <div className="div2">
-      <p>I am a web developer who builds custom web-applications right from consulting, development, maintenance and
-        support.</p>
-      <Link href="/quote"><button>Get A Free Quote</button></Link>
-    </div>
-
-    <div className="div3">
-      <p>Scroll down
-        <Image className='arrowDown' src="/triangleDown.svg" alt="arrow down" width={22} height={22} />
-      </p>
-    </div>
-  </main>
-
-  <Canvas style={{ position: "absolute", top: "0", left: "0", zIndex: "-1", width: "100vw", height: "100vh" }}>
+  {/* ---------------------- Canvas ---------------------- */}
+  <Canvas style={{ position: "absolute", top: "0", left: "0", zIndex: "-1", width: "70vw", height: "130vh" }}>
     <ambientLight intensity={0.5} />
     <directionalLight intensity={0.5} position={[2, -1, -2]} />
     <SphereWireframed />
     <OrbitControls autoRotate autoRotateSpeed={-0.25} />
   </Canvas>
+
+  {/* ---------------------- Hero ---------------------- */}
+  <div className='hero'>
+
+    <div className="div1">
+      <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development.</h1>
+    </div>
+
+    <div className="div2">
+      <p className='gradientBorder'>I am a web developer who builds custom web-applications right from consulting, development, maintenance and
+        support.</p>
+      <Link href="/quote"><button>Get A Free Quote</button></Link>
+    </div>
+
+    <div className="div3">
+      <p>Scroll down</p>
+      <Image className='arrowDown' src="/svg/triangleDown.svg" alt="arrow down" width={22} height={34} />
+    </div>
+
+  </div>
+
+  {/* ---------------------- My Services ---------------------- */}
+  <section className="myServices">
+
+    <div className="div1">
+      <h3>My <br />
+        Services</h3>
+    </div>
+
+    <div className="div2">
+      <Image className='logo' src="/svg/servicesLanding.svg" alt="logo" width={60} height={60} />
+      <h4>Landing Page <abbr className='purple'>⇀</abbr></h4>
+      <p>A standalone web page that a person lands on after clicking through from an email, ad, or other digital
+        location.</p>
+    </div>
+
+    <div className="div3">
+      <Image className='logo' src="/svg/servicesSPA.svg" alt="logo" width={60} height={60} />
+      <h4>Single Page Application <abbr className='purple'>⇀</abbr></h4>
+      <p>A website that interacts with the user by dynamically rewriting the current web page with new data from the web
+        server, instead of the default method of a web browser loading entire new pages.</p>
+    </div>
+
+    <div className="div4">
+      <Image className='logo' src="/svg/servicesBespoke.svg" alt="logo" width={60} height={60} />
+      <h4>Bespoke Website <abbr className='purple'>⇀</abbr></h4>
+      <p>Sometimes ideas go beyond what existing systems are capable of. A tailor-made solution make your ideas a
+        reality. </p>
+    </div>
+
+  </section>
+
+  {/* ---------------------- Quote ---------------------- */}
+  <section className="quote">
+    <div className="div1">
+      <h2>All applications are <abbr className='purple'>hand-coded</abbr> from scratch <abbr className='magenta'>without
+          using</abbr> any Content Management System.</h2>
+    </div>
+  </section>
 
 </div>
 )

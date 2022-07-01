@@ -1,7 +1,6 @@
 /* ------------------------------ Fonts import ------------------------------ */
 @import url("https://use.typekit.net/pgw0ymf.css");
 
-
 /* ------------------------------ Variables ------------------------------ */
 $purple: #8A3FFC;
 $magenta: #D02670;
@@ -9,9 +8,10 @@ $background: #21272A;
 $darkGrey: #697077;
 $lightGrey: #D0D0D1;
 $white: #FFFFFF;
-$gradient: linear-gradient(90deg, rgba(138, 63, 252, 1) 0%, rgba(208, 38, 112, 1) 100%);
-$gradientFaded: linear-gradient(90deg, rgba(138, 63, 252, 0.75) 0%, rgba(208, 38, 112, 0.75) 100%);
+$gradientPurple: linear-gradient(90deg, rgba(138, 63, 252, 1) 0%, rgba(208, 38, 112, 1) 100%);
+$gradientPurpleFaded: linear-gradient(90deg, rgba(138, 63, 252, 0.75) 0%, rgba(208, 38, 112, 0.75) 100%);
 $gradientBackground: linear-gradient(90deg, rgba(105, 112, 119, 0.75) 0%, rgba(105, 112, 119, 0) 80%);
+$gradientBackgroundFaded: linear-gradient(90deg, rgba(105, 112, 119, 0.5) 0%, rgba(105, 112, 119, 0) 80%);
 $gradientOverlay: linear-gradient(0deg, rgba(105, 112, 119, 0) 0%, rgba(105, 112, 119, 1) 100%);
 
 * {
@@ -34,6 +34,7 @@ body {
   line-height: 1.4;
   max-width: 1686px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 h1,
@@ -49,24 +50,27 @@ h4 {
 }
 
 h1 {
-  font-size: 6.854rem;
+  font-size: 120px;
 }
 
 h2 {
-  font-size: 4.236rem;
+  font-size: 105px;
 }
 
 h3 {
-  font-size: 2.618rem;
+  font-size: 90px;
 }
 
 h4 {
   font-size: 1.618rem;
+  line-height: 0;
+  margin-top: 35px;
 }
 
 p {
   font-size: 22px;
   line-height: 1.4;
+  margin-bottom: 0;
 }
 
 a {
@@ -93,6 +97,15 @@ a {
   }
 }
 
+.purple {
+  color: $purple;
+}
+
+.magenta {
+  color: $magenta;
+}
+
+// ------------------------------ Header ------------------------------
 header {
   position: fixed;
   width: calc(100% - 240px);
@@ -120,7 +133,7 @@ header {
 }
 
 button {
-  background: $gradientFaded;
+  background: $gradientPurpleFaded;
   color: $white;
   font-family: proxima-nova;
   font-weight: 300;
@@ -135,12 +148,11 @@ button {
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: $gradient;
+    background: $gradientPurple;
   }
 }
 
 // ------------------------------ Strips ------------------------------
-
 .strip {
   position: fixed;
   width: 1px;
@@ -165,8 +177,12 @@ button {
   top: 0;
 }
 
-// ------------------------------ Overlay ------------------------------
+// ------------------------------ Sections ------------------------------
+section {
+  margin: 160px 0;
+}
 
+// ------------------------------ Overlay ------------------------------
 .overlay {
   position: absolute;
   height: 100vh;
@@ -178,29 +194,97 @@ button {
   z-index: -1;
 }
 
-// ------------------------------ Grid ------------------------------
-
-.parent {
+// ------------------------------ Hero ------------------------------
+.hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: calc(100vh - 80px);
+
+  .div1 {
+    grid-area: 1 / 6 / 2 / 12;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10vh;
+  }
+
+  .div2 {
+    grid-area: 2 / 2 / 3 / 6;
+
+    p {
+      padding-left: 17px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  .div3 {
+    grid-area: 2 / 11 / 3 / 13;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    gap: 10px;
+  }
 }
 
-.div1 {
-  grid-area: 1 / 6 / 2 / 12;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 10vh;
+.gradientBorder {
+  background: linear-gradient(180deg, $purple 0%, $magenta 100%);
+  background-size: 3px;
+  background-repeat: no-repeat;
 }
 
-.div2 {
-  grid-area: 2 / 2 / 3 / 6;
+// ------------------------------ My Services ------------------------------
+.myServices {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .div1 {
+    grid-area: 1 / 2 / 2 / 5;
+    align-self: center;
+  }
+
+  .div2 {
+    grid-area: 1 / 6 / 2 / 12;
+    align-self: center;
+    background: $gradientBackgroundFaded;
+    padding: 80px 140px;
+    margin: 40px 0;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: $gradientBackground;
+    }
+  }
+
+  .div3 {
+    grid-area: 2 / 1 / 3 / 7;
+    align-self: center;
+    background: $gradientBackgroundFaded;
+    padding: 80px 140px;
+    margin: 40px 0;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: $gradientBackground;
+    }
+  }
+
+  .div4 {
+    grid-area: 2 / 9 / 3 / 13;
+    align-self: center;
+    padding: 80px 0;
+    margin: 40px 0;
+  }
 }
 
-.div3 {
-  grid-area: 2 / 11 / 3 / 13;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  text-transform: uppercase;
+// ------------------------------ Quote ------------------------------
+.quote {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .div1 {
+    grid-area: 1 / 2 / 1 / 12;
+    align-self: center;
+    text-align: center;
+  }
 }
