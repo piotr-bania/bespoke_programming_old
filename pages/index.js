@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { Canvas } from '@react-three/fiber'
 import SphereWireframed from '../public/models/sphereWireframed/SphereWireframed'
 import { OrbitControls } from '@react-three/drei'
+import CanvasHero from '../components/CanvasHero'
+import CanvasServices from '../components/CanvasServices'
 
 export default function Home() {
 return (
@@ -20,12 +22,8 @@ return (
   </Head>
 
   {/* ---------------------- Canvas ---------------------- */}
-  <Canvas style={{ position: "absolute", top: "0", left: "0", zIndex: "-1", width: "70vw", height: "130vh" }}>
-    <ambientLight intensity={0.5} />
-    <directionalLight intensity={0.5} position={[2, -1, -2]} />
-    <SphereWireframed />
-    <OrbitControls autoRotate autoRotateSpeed={-0.25} />
-  </Canvas>
+  <CanvasHero />
+  <CanvasServices />
 
   {/* ---------------------- Hero ---------------------- */}
   <div className='hero'>
@@ -35,7 +33,8 @@ return (
     </div>
 
     <div className="div2">
-      <p className='gradientBorder'>I am a web developer who builds custom web-applications right from consulting, development, maintenance and
+      <p className='gradientBorder'>I am a web developer who builds custom web-applications right from consulting,
+        development, maintenance and
         support.</p>
       <Link href="/quote"><button>Get A Free Quote</button></Link>
     </div>

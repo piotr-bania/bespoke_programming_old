@@ -248,4 +248,12 @@ section {
   grid-area: 1/2/1/12;
   align-self: center;
   text-align: center;
+}
+
+.canvasHero {
+  z-index: -1;
+}
+
+.canvasServices {
+  z-index: -1;
 }/*# sourceMappingURL=globals.css.map */
