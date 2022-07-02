@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import { useGLTF, PerspectiveCamera } from '@react-three/drei'
-import { Flex, Box } from '@react-three/flex'
 
 export default function SphereWireframed({ ...props }) {
 const group = useRef()

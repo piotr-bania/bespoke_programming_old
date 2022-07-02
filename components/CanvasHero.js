@@ -18,6 +18,11 @@ return (
         <ambientLight intensity={1} />
         <pointLight color="#D0D0D1" intensity={0.5} position={[-2, 1, 2]} />
         <directionalLight color="#697077" intensity={0.75} position={[2, -1, -2]} />
+        {/* <Flex justifyContent="center" alignItems="center">
+            <Box centerAnchor flexGrow={1}>
+            <SphereWireframed />
+            </Box>
+        </Flex> */}
         <SphereWireframed />
         <OrbitControls autoRotate autoRotateSpeed={-0.25} />
     </Canvas>
