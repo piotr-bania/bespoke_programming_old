@@ -5,6 +5,7 @@
 $purple: #8A3FFC;
 $magenta: #D02670;
 $background: #21272A;
+$backgroundFaded: rgba(105, 112, 119, 0.25);
 $darkGrey: #697077;
 $lightGrey: #D0D0D1;
 $white: #FFFFFF;
@@ -334,4 +335,36 @@ button {
 
 .canvasServices {
   z-index: -1;
+}
+
+// ------------------------------ Footer ------------------------------
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 240px;
+  color: $white;
+
+  .form {
+    grid-area: 1 / 3 / 1 / 11;
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    align-content: center;
+
+    h4 {
+      text-align: left;
+    }
+
+    input,
+    textarea {
+      background: $backgroundFaded;
+      color: $lightGrey;
+      border: none;
+      border-top: 2px solid $magenta;
+
+      ::placeholder {
+        // border: 5px solid white;
+      }
+    }
+  }
 }

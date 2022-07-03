@@ -4,7 +4,7 @@ const Footer = () => {
 return (
 <div>
     <section className="footer">
-        <div className="contact">
+        <div className="form">
             <form action="https://formsubmit.co/contact@piotrbania.dev" method='POST'>
 
                 <h4>Get a Quote</h4>
