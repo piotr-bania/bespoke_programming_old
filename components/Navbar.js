@@ -4,13 +4,14 @@ import Link from 'next/link'
 
 const Navbar = () => {
 return (
-<div>
+<section>
     <header>
-        <Image className='logo' src="/svg/logo.svg" alt="logo" width={60} height={60} />
+        <Link href="/"><Image className='logo' src="/svg/logo.svg" alt="logo" width={60} height={60} /></Link>
         <nav>
             <li>
                 <Link href="/"><a>Home</a></Link>
                 <Link href="/services"><a>Services</a></Link>
+                <Link href="/process"><a>Process</a></Link>
                 <Link href="/portfolio"><a>Portfolio</a></Link>
                 <Link href="/about"><a>About</a></Link>
                 <Link href="/pricing"><a>Pricing</a></Link>
@@ -18,7 +19,7 @@ return (
             <Link href="/contact"><button>Contact</button></Link>
         </nav>
     </header>
-</div>
+</section>
 )
 }
 
