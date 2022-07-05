@@ -316,4 +316,14 @@ button:hover {
   color: #D0D0D1;
   border: none;
   border-top: 2px solid #D02670;
+}
+.footer .form input ::-moz-placeholder, .footer .form textarea ::-moz-placeholder {
+  border: 5px solid white;
+}
+.footer .form input :-ms-input-placeholder, .footer .form textarea :-ms-input-placeholder {
+  border: 5px solid white;
+}
+.footer .form input ::placeholder,
+.footer .form textarea ::placeholder {
+  border: 5px solid white;
 }/*# sourceMappingURL=globals.css.map */

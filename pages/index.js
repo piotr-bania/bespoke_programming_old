@@ -2,9 +2,20 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+
 import CanvasHero from '../components/CanvasHero'
 import CanvasServices from '../components/CanvasServices'
 import Overlay1 from '../components/Overlay1'
+
+import { motion } from "framer-motion"
+
+{/* ---------------------- Animations ---------------------- */}
+const variants = {
+hidden: { opacity: 0 },
+visible: { opacity: 1 },
+start: { y: "50px" },
+end: { y: "0px" }
+}
 
 export default function Home() {
 return (
@@ -25,24 +36,24 @@ return (
 
   {/* ---------------------- Hero ---------------------- */}
   <section className='hero'>
-    
+
     <Overlay1 />
 
-    <div className="div1">
+    <motion.div initial="hidden" animate="visible" variants={variants} transition={{ duration: 1 }} className="div1">
       <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development.</h1>
-    </div>
+    </motion.div>
 
-    <div className="div2">
+    <motion.div initial="hidden" animate="visible" variants={variants} transition={{ duration: 1, delay: 0.2 }} className="div2">
       <p className='gradientBorder'>I am a web developer who builds custom web-applications right from consulting,
         development, maintenance and
         support.</p>
       <Link href="/quote"><button>Get A Free Quote</button></Link>
-    </div>
+    </motion.div>
 
-    <div className="div3">
+    <motion.div initial="hidden" animate="visible" variants={variants} transition={{ duration: 1, delay: 0.4 }} className="div3">
       <p>Scroll down</p>
       <Image className='arrowDown' src="/svg/triangleDown.svg" alt="arrow down" width={22} height={34} />
-    </div>
+    </motion.div>
 
   </section>
 
