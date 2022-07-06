@@ -3,16 +3,16 @@ import { Canvas } from '@react-three/fiber'
 import SphereWireframed from '../public/models/sphereWireframed/SphereWireframed'
 import { OrbitControls } from '@react-three/drei'
 
-const CanvasServices = () => {
+const CanvasQuote = () => {
 return (
 <>
     {/* ---------------------- Canvas ---------------------- */}
-    <Canvas className='canvasServices' style={{
+    <Canvas className='canvasQuote' style={{
         position: "absolute",
-        top: "190vh",
-        left: "55vw",
-        width: "60vw",
-        height: "60vw"
+        top: "-25vh",
+        left: "70vw",
+        width: "40vw",
+        height: "40vw"
         }}>
 <ambientLight intensity={1} />
         <pointLight color="#D0D0D1" intensity={0.5} position={[-2, 1, 2]} />
@@ -24,4 +24,4 @@ return (
 )
 }
 
-export default CanvasServices
+export default CanvasQuote
