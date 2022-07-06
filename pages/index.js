@@ -126,28 +126,45 @@ return (
   {/* ---------------------- Featured Work ---------------------- */}
   <section id="featuredWork">
 
-    <h3 className="heading">Featured <br />Work</h3>
-    <h4>Selected Projects</h4>
+    <div className="heading">
+      <h3>Featured <br />Work</h3>
+      <p className='uppercase'>Selected Projects</p>
+    </div>
 
-    <div className="div2">
+    <div className="div1">
+      <div className="project">
+        <Image src="/images/project-1.jpg" alt="icon" width={400} height={250} />
+      </div>
       <h4><abbr className='purple'>000</abbr> Personal Portfolio</h4>
       <p>This is my personal portfolio website.</p>
-      <p className='whiteText'>Technologies used:</p>
-      <p>Html, CSS, Sass, JavaScript, Three.js</p>
+      <div className="gradientBorder">
+        <p className='whiteText'>Technologies used:</p>
+        <p>Html, CSS, Sass, JavaScript, Three.js</p>
+      </div>
+    </div>
+
+    <div className="div2">
+    <div className="project">
+        <Image src="/images/project-2.jpg" alt="icon" width={400} height={250} />
+      </div>
+      <h4><abbr className='purple'>001</abbr> Second Project</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div className="gradientBorder">
+        <p className='whiteText'>Technologies used:</p>
+        <p>Html, CSS, Sass, JavaScript, Three.js</p>
+      </div>
     </div>
 
     <div className="div3">
-      <h4><abbr className='purple'>001</abbr> Second Project</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-      <p className='whiteText'>Technologies used:</p>
-      <p>Html, CSS, Sass, JavaScript, Three.js</p>
-    </div>
-
-    <div className="div4">
+    <div className="project">
+        <Image src="/images/project-1.jpg" alt="icon" width={400} height={250} />
+      </div>
       <h4><abbr className='purple'>002</abbr> Third Project</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      <p className='whiteText'>Technologies used:</p>
-      <p>Html, CSS, Sass, JavaScript, Three.js</p>
+      <div className="gradientBorder">
+        <p className='whiteText'>Technologies used:</p>
+        <p>Html, CSS, Sass, JavaScript, Three.js</p>
+      </div>
     </div>
 
   </section>
