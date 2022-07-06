@@ -8,19 +8,10 @@ import Overlay1 from '../components/overlay/Overlay1'
 
 import { motion } from "framer-motion"
 
-{/* ---------------------- Animations ---------------------- */}
-const variants = {
-hidden: { opacity: 0 },
-visible: { opacity: 1 },
-start: { y: "50px" },
-end: { y: "0px" }
-}
-
 export default function Home() {
 return (
 
-<div>
-
+<motion.div exit={{ opacity:0 }}>
   {/* ---------------------- Head ---------------------- */}
 
   <Head>
@@ -34,29 +25,28 @@ return (
   <CanvasServices />
 
   {/* ---------------------- Hero ---------------------- */}
-  <section id='hero'>
+  <section id="hero">
 
     <Overlay1 />
 
-    <motion.div initial="hidden" animate="visible" variants={variants} transition={{ duration: 1 }} className="div1">
+    <div className="div1">
       <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development.</h1>
-    </motion.div>
+    </div>
 
-    <motion.div initial="hidden" animate="visible" variants={variants} transition={{ duration: 1, delay: 0.2 }}
-      className="div2">
+    <div className="div2">
       <p className='gradientBorder'>I am a web developer who builds custom web-applications right from consulting,
         development, maintenance and
         support.</p>
       <Link href="/quote"><button>Get A Free Quote</button></Link>
-    </motion.div>
+    </div>
 
-    <motion.div initial="hidden" animate="visible" variants={variants} transition={{ duration: 1, delay: 0.4 }}
-      className="div3">
+    <div className="div3">
       <p>Scroll down</p>
       <Image className='arrowDown' src="/svg/triangleDown.svg" alt="arrow down" width={22} height={34} />
-    </motion.div>
+    </div>
 
   </section>
+
 
   {/* ---------------------- My Services ---------------------- */}
   <section id="myServices">
@@ -171,6 +161,6 @@ return (
 
   </section>
 
-</div>
+</motion.div>
 )
 }
