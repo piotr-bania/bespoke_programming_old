@@ -6,12 +6,10 @@ import CanvasHero from '../components/canvas/CanvasHero'
 import CanvasServices from '../components/canvas/CanvasServices'
 import Overlay1 from '../components/overlay/Overlay1'
 
-import { motion } from "framer-motion"
-
 export default function Home() {
 return (
 
-<motion.div exit={{ opacity:0 }}>
+<div>
   {/* ---------------------- Head ---------------------- */}
 
   <Head>
@@ -54,21 +52,22 @@ return (
     <h3 className="heading">My <br />Services</h3>
 
     <div className="div2">
-      <Image className='logo' src="/svg/servicesLanding.svg" alt="logo" width={60} height={60} />
+      <Image className='icon' src="/svg/servicesLanding.svg" alt="icon" width={60} height={60} />
       <h4>Landing Page <abbr className='purple'>⇀</abbr></h4>
       <p>A standalone web page that a person lands on after clicking through from an email, ad, or other digital
         location.</p>
     </div>
 
     <div className="div3">
-      <Image className='logo' src="/svg/servicesSPA.svg" alt="logo" width={60} height={60} />
+      <Image className='icon' src="/svg/servicesSPA.svg" alt="icon" width={60} height={60} />
       <h4>Single Page Application <abbr className='purple'>⇀</abbr></h4>
-      <p>A website that interacts with the user by dynamically rewriting the current web page with new data from the web
+      <p>A website that interacts with the user by dynamically rewriting the current web page with new data from the
+        web
         server, instead of the default method of a web browser loading entire new pages.</p>
     </div>
 
     <div className="div4">
-      <Image className='logo' src="/svg/servicesBespoke.svg" alt="logo" width={60} height={60} />
+      <Image className='icon' src="/svg/servicesBespoke.svg" alt="icon" width={60} height={60} />
       <h4>Bespoke Website <abbr className='purple'>⇀</abbr></h4>
       <p>Sometimes ideas go beyond what existing systems are capable of. A tailor-made solution make your ideas a
         reality. </p>
@@ -90,33 +89,33 @@ return (
 
     <h3 className="heading">My <br />Process</h3>
 
-    <div className="div2">
-      <Image className='logo' src="/svg/processPlanning.svg" alt="logo" width={60} height={60} />
+    <div className="div1">
       <h4 className="number">01</h4>
+      <Image className='icon' src="/svg/processPlanning.svg" alt="icon" width={60} height={60} />
       <h4>Gathering information & planning</h4>
       <p>I define your goals and make schedule for the project. I then make requirement for documents, wireframe of
         pages and sitemap.</p>
     </div>
 
-    <div className="div3">
-      <Image className='logo' src="/svg/processBuild.svg" alt="logo" width={60} height={60} />
+    <div className="div2">
       <h4 className="number">02</h4>
+      <Image className='icon' src="/svg/processBuild.svg" alt="icon" width={60} height={60} />
       <h4>Build</h4>
       <p>I design the website that support good looks and responsive layout.
         Then, I build HTML templates, CSS styles and add functionality to the site.</p>
     </div>
 
-    <div className="div4">
-      <Image className='logo' src="/svg/processTesting.svg" alt="logo" width={60} height={60} />
+    <div className="div3">
       <h4 className="number">03</h4>
+      <Image className='icon' src="/svg/processTesting.svg" alt="icon" width={60} height={60} />
       <h4>Testing</h4>
       <p>When the build is finalized I will need to test it to make sure that everything is working correctly. <br />I
         launch the beta release and check both: the page speed and w3c validation.</p>
     </div>
 
-    <div className="div5">
-      <Image className='logo' src="/svg/processLaunch.svg" alt="logo" width={60} height={60} />
+    <div className="div4">
       <h4 className="number">04</h4>
+      <Image className='icon' src="/svg/processLaunch.svg" alt="icon" width={60} height={60} />
       <h4>Launch & Maintenance</h4>
       <p>Once both parties are happy, website is then unveiled to the awaiting public. Upon request, I keep up to date
         website with content and technologies.</p>
@@ -160,7 +159,6 @@ return (
       </abbr>?</h2>
 
   </section>
-
-</motion.div>
+</div>
 )
 }
