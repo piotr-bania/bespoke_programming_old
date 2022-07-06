@@ -1,5 +1,5 @@
 import React from 'react'
-import CanvasQuote from '../components/CanvasQuote'
+import CanvasQuote from '../components/canvas/CanvasQuote'
 
 const quote = () => {
 return (

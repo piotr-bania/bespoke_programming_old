@@ -1,8 +1,7 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber'
-import SphereWireframed from '../public/models/sphereWireframed/SphereWireframed'
+import SphereWireframed from '../../public/models/sphereWireframed/SphereWireframed'
 import { OrbitControls } from '@react-three/drei'
-import { Flex, Box } from '@react-three/flex'
 
 const CanvasHero = () => {
 return (

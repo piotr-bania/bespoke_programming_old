@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="52.612" viewBox="0 0 60 52.612">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8a3ffc"/>
+      <stop offset="1" stop-color="#d02670"/>
+    </linearGradient>
+  </defs>
+  <g id="telegram_social_media_network_chat" data-name="telegram social media network chat" transform="translate(-2.282 -3.767)">
+    <path id="Path_24" data-name="Path 24" d="M60.53,4.924a4.937,4.937,0,0,0-5.026-.8L4.779,24.43a4.052,4.052,0,0,0,0,7.484l3.277,1.351a2.208,2.208,0,1,0,1.7-4.074l-2.435-1L57.164,8.268a.487.487,0,0,1,.509,0,.531.531,0,0,1,.177.509l-9.1,42.466a.886.886,0,0,1-.576.664.863.863,0,0,1-.863-.133L29.6,37.958,46.935,20.445a2.214,2.214,0,0,0-2.7-3.454L18.817,32.047a2.214,2.214,0,1,0,2.214,3.808l10.694-6.31-5.2,5.292a4.428,4.428,0,0,0,.443,6.819L44.677,55.272a5.314,5.314,0,0,0,3.255,1.107,5.469,5.469,0,0,0,1.838-.332,5.247,5.247,0,0,0,3.365-3.875L62.168,9.751A4.937,4.937,0,0,0,60.53,4.924Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

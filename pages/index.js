@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import CanvasHero from '../components/CanvasHero'
-import CanvasServices from '../components/CanvasServices'
-import Overlay1 from '../components/Overlay1'
+import CanvasHero from '../components/canvas/CanvasHero'
+import CanvasServices from '../components/canvas/CanvasServices'
+import Overlay1 from '../components/overlay/Overlay1'
 
 import { motion } from "framer-motion"
 
