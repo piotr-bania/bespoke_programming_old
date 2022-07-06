@@ -9,10 +9,10 @@ return (
     {/* ---------------------- Canvas ---------------------- */}
     <Canvas className='canvasQuote' style={{
         position: "absolute",
-        top: "-25vh",
-        left: "70vw",
-        width: "40vw",
-        height: "40vw"
+        top: "-35vh",
+        left: "65vw",
+        width: "50vw",
+        height: "50vw"
         }}>
 <ambientLight intensity={1} />
         <pointLight color="#D0D0D1" intensity={0.5} position={[-2, 1, 2]} />

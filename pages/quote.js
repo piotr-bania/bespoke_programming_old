@@ -63,7 +63,7 @@ return (
       <textarea id="questions" name="text" placeholder="Is there anything else you would like to ask?" cols="30"
         rows="3"></textarea>
 
-      <button type="submit" value="Send">Get A Free Quote</button>
+      <button type="submit" value="Send">Submit</button>
     </div>
 
   </form>

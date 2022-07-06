@@ -182,6 +182,7 @@ label {
 // ------------------------------ Sections ------------------------------
 section {
   grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
   margin: 40px 120px;
 }
 
