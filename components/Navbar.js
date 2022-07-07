@@ -13,7 +13,6 @@ return (
                 <Link href="/services"><a>Services</a></Link>
                 <Link href="/process"><a>Process</a></Link>
                 <Link href="/portfolio"><a>Portfolio</a></Link>
-                <Link href="/about"><a>About</a></Link>
                 <Link href="/faq"><a>FAQ</a></Link>
             </li>
             <Link href="/quote"><button>Pricing</button></Link>
