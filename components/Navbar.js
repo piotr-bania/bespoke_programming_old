@@ -14,9 +14,9 @@ return (
                 <Link href="/process"><a>Process</a></Link>
                 <Link href="/portfolio"><a>Portfolio</a></Link>
                 <Link href="/about"><a>About</a></Link>
-                <Link href="/pricing"><a>Pricing</a></Link>
+                <Link href="/faq"><a>FAQ</a></Link>
             </li>
-            <Link href="/contact"><button>Contact</button></Link>
+            <Link href="/quote"><button>Pricing</button></Link>
         </nav>
     </header>
 </section>

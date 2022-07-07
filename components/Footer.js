@@ -25,9 +25,9 @@ return (
     </div>
 
     <div className="div4">
-        <h4>Office Hours</h4>
-        <h4>Monday - Friday: 08.00-17.00 GMT</h4><br />
-        <p className='uppercase'>Off on weekends</p>
+        <h4>Office Hours</h4><br />
+        <p className='uppercase'>Monday - Friday <abbr className='purple'>⇀</abbr> 09.00-17.00 GMT</p>
+        <p className='uppercase'>Saturday - Sunday <abbr className='purple'>⇀</abbr> 09.00-13.00 GMT</p>
     </div>
 
     <div className="gradientPurple rightGradient"></div>

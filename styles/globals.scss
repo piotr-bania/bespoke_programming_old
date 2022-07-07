@@ -286,7 +286,7 @@ button {
 #myServices {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 240px;
+  margin-top: 120px;
 
   .div2,
   .div3 {
@@ -326,7 +326,7 @@ button {
 #myProcess {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 240px;
+  margin-top: 120px;
 
   .div1,
   .div2,
@@ -369,7 +369,7 @@ button {
 #featuredWork {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 240px;
+  margin-top: 120px;
 
   .uppercase {
     text-transform: uppercase;
@@ -401,10 +401,6 @@ button {
 
   .div1,
   .div2 {
-    // background: $gradientBackgroundFaded;
-    // padding: 40px;
-    // border: 1px solid $background;
-    // transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -470,6 +466,30 @@ section#quote {
   }
 }
 
+// ------------------------------ About Me ------------------------------
+#about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 120px;
+
+  .uppercase {
+    text-transform: uppercase;
+    color: $darkGrey;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .upper {
+    grid-area: 1 / 5 / 2 / 11;
+    padding-top: 80px;
+  }
+
+  .lower {
+    grid-area: 2 / 3 / 3 / 9;
+    padding-top: 80px;
+  }
+}
+
 // ------------------------------ Contact ------------------------------
 #contact {
   height: 100%;
@@ -479,10 +499,11 @@ section#quote {
 #quoteForm {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 200px;
+  margin-top: 120px;
 
   .heading {
     grid-area: 1 / 2 / 2 / 6;
+    margin-bottom: 0;
   }
 
   .description {
@@ -593,12 +614,14 @@ section#quote {
   .leftGradient {
     grid-area: 1 / 1 / 2 / 12;
     height: 80px;
+    margin-bottom: 40px;
     z-index: 0;
   }
 
   .rightGradient {
     grid-area: 5 / 5 / 6 / 13;
     height: 80px;
+    margin-top: 40px;
     z-index: 0;
   }
 

@@ -254,7 +254,7 @@ button:hover {
 #myServices {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 240px;
+  margin-top: 120px;
 }
 #myServices .div2,
 #myServices .div3 {
@@ -289,7 +289,7 @@ button:hover {
 #myProcess {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 240px;
+  margin-top: 120px;
 }
 #myProcess .div1,
 #myProcess .div2,
@@ -326,7 +326,7 @@ button:hover {
 #featuredWork {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 240px;
+  margin-top: 120px;
 }
 #featuredWork .uppercase {
   text-transform: uppercase;
@@ -410,6 +410,26 @@ section#quote {
   text-align: center;
 }
 
+#about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 120px;
+}
+#about .uppercase {
+  text-transform: uppercase;
+  color: #697077;
+  font-weight: 400;
+  margin: 0;
+}
+#about .upper {
+  grid-area: 1/5/2/11;
+  padding-top: 80px;
+}
+#about .lower {
+  grid-area: 2/3/3/9;
+  padding-top: 80px;
+}
+
 #contact {
   height: 100%;
 }
@@ -417,10 +437,11 @@ section#quote {
 #quoteForm {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 200px;
+  margin-top: 120px;
 }
 #quoteForm .heading {
   grid-area: 1/2/2/6;
+  margin-bottom: 0;
 }
 #quoteForm .description {
   grid-area: 2/2/3/6;
@@ -518,11 +539,13 @@ section#quote {
 #footer .leftGradient {
   grid-area: 1/1/2/12;
   height: 80px;
+  margin-bottom: 40px;
   z-index: 0;
 }
 #footer .rightGradient {
   grid-area: 5/5/6/13;
   height: 80px;
+  margin-top: 40px;
   z-index: 0;
 }
 #footer .div1 {
