@@ -425,13 +425,19 @@ section#quote {
   grid-area: 1/5/2/11;
   padding-top: 80px;
 }
+#about .upper a {
+  font-family: proxima-nova;
+  font-size: 22px;
+  text-transform: lowercase;
+}
 #about .lower {
-  grid-area: 2/3/3/9;
+  grid-area: 2/3/3/8;
   padding-top: 80px;
 }
-
-#contact {
-  height: 100%;
+#about .lower a {
+  font-family: proxima-nova;
+  font-size: 22px;
+  text-transform: capitalize;
 }
 
 #quoteForm {

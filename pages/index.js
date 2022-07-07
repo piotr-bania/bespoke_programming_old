@@ -198,17 +198,21 @@ return (
         <br />
         I am experienced with HTML5, CSS3, JavaScript, Node.js, React.js, Next.js. I also have +7 years of experience with WordPress.
         <br /><br />
-        My personal portfolio website: <abbr className='purple'>https://piotrbania.dev</abbr>
+        My personal portfolio website: <a href="https://piotrbania.dev"><abbr className='purple'>piotrbania.dev</abbr></a>
         <br />
-        GitHub profile: <abbr className='magenta'>github.com/piotr-bania</abbr>
+        GitHub profile: <a href="https://github.com/piotr-bania"><abbr className='purple'>Piotr-Bania</abbr></a>
       </p>
     </div>
 
     <div className="description lower">
       <p className='uppercase'>The Company</p>
-      <p>Bespoke Programming is a Private Limited Company incorporated in United Kingdom on 6th of June 2022. It was
+      <p>Bespoke Programming is a Private Limited Company incorporated in United Kingdom on 6th of June 2022.
+        <br /><br />
+        It was
         created in order to help local companies with their growth, through a medium of web presence and search engine
-        optimization.</p>
+        optimization.
+        <br /><br />
+        Find out more about my workflow and approach to the projects on the <Link href="/process"><a><abbr className='magenta'>Process Page</abbr></a></Link>.</p>
     </div>
 
   </section>

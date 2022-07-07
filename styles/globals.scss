@@ -482,17 +482,24 @@ section#quote {
   .upper {
     grid-area: 1 / 5 / 2 / 11;
     padding-top: 80px;
+
+    a {
+      font-family: proxima-nova;
+      font-size: 22px;
+      text-transform: lowercase;
+    }
   }
 
   .lower {
-    grid-area: 2 / 3 / 3 / 9;
+    grid-area: 2 / 3 / 3 / 8;
     padding-top: 80px;
-  }
-}
 
-// ------------------------------ Contact ------------------------------
-#contact {
-  height: 100%;
+    a {
+      font-family: proxima-nova;
+      font-size: 22px;
+      text-transform: capitalize;
+    }
+  }
 }
 
 // ------------------------------ Quote Form ------------------------------
