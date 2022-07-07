@@ -186,9 +186,7 @@ return (
 
     <div className="description upper">
       <p className='uppercase'>Myself</p>
-      <p>My name is Piotr Bania.
-        <br />
-        I am a self-taught web developer from Poland.
+      <p>I am a self-taught web developer from Poland.
         <br /><br />
         Since May 2021 my focus went entirely into programming. I have a passion for coding, web development, 3d
         environments and UI. I translate designs to front-end code and easily work with cross-functional teams to define

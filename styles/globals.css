@@ -449,6 +449,13 @@ section#quote {
   grid-area: 1/2/2/6;
   margin-bottom: 0;
 }
+#faq .left {
+  grid-area: 2/1/4/6;
+}
+#faq .right {
+  grid-area: 1/7/4/12;
+  padding-top: 80px;
+}
 
 #quoteForm {
   display: grid;
