@@ -440,6 +440,16 @@ section#quote {
   text-transform: capitalize;
 }
 
+#faq {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 120px;
+}
+#faq .heading {
+  grid-area: 1/2/2/6;
+  margin-bottom: 0;
+}
+
 #quoteForm {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
