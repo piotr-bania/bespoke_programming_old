@@ -631,8 +631,19 @@ section#quote {
     margin: 0;
   }
 
-  h3 {
+  h3, a {
+    font-family: contralto-big;
+    font-weight: 600;
+    text-transform: lowercase;
+    color: $white;
+    line-height: 1;
+    opacity: 1;
     font-size: 64px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline $purple 5px;
+    }
   }
 
   .gradientPurple {

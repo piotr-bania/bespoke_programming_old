@@ -553,8 +553,19 @@ section#quote {
 #footer p {
   margin: 0;
 }
-#footer h3 {
+#footer h3, #footer a {
+  font-family: contralto-big;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  line-height: 1;
+  opacity: 1;
   font-size: 64px;
+  transition: all 0.3s ease-in-out;
+}
+#footer h3:hover, #footer a:hover {
+  -webkit-text-decoration: underline #8A3FFC 5px;
+          text-decoration: underline #8A3FFC 5px;
 }
 #footer .gradientPurple {
   background: linear-gradient(90deg, rgba(138, 63, 252, 0.75) 0%, rgba(208, 38, 112, 0.75) 100%);

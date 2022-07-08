@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/dist/client/link'
 
 const Footer = () => {
 return (
@@ -10,13 +11,17 @@ return (
     <div className="div1">
         <Image className='logo' src="/svg/email.svg" alt="logo" width={60} height={60} />
         <p className='uppercase'>Email</p>
-        <h3>contact@bespokeprogramming.net</h3>
+        <a href="mailto:contact@bespokeprogramming.net">
+            <h3>contact@bespokeprogramming.net</h3>
+        </a>
     </div>
 
     <div className="div2">
         <Image className='logo' src="/svg/telegram.svg" alt="logo" width={60} height={60} />
         <p className='uppercase'>Telegram</p>
-        <h3>t.me/bespokeprogramming</h3>
+        <a href="https://t.me/bespokeprogramming" target="_blank" rel="noreferrer">
+            <h3>t.me/bespokeprogramming</h3>
+        </a>
     </div>
 
     <div className="div3">
