@@ -561,6 +561,16 @@ section#quote {
   grid-area: 2/9/3/12;
 }
 
+#recentPosts {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 120px;
+}
+#recentPosts .heading {
+  grid-area: 1/2/2/6;
+  margin-bottom: 0;
+}
+
 .canvasHero,
 .canvasServices,
 .canvasQuote,
