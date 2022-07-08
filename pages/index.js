@@ -219,7 +219,14 @@ return (
     </div>
   </section>
 
-  {/* ---------------------- My Services ---------------------- */}
+  {/* ---------------------- Recent Posts ---------------------- */}
+  <section id="recentPosts">
+
+    <div className="heading">
+      <h3>Recent <br />Posts</h3>
+    </div>
+  </section>
+  
   <Blog />
 
 </div>
