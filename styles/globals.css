@@ -582,4 +582,17 @@ section#quote {
 }
 #footer .div4 {
   grid-area: 4/8/5/12;
+}
+#footer .map {
+  grid-area: 2/1/5/5;
+  background: linear-gradient(90deg, rgb(138, 63, 252) 0%, rgb(208, 38, 112) 100%);
+  filter: grayscale(1);
+  padding: 2px;
+  border: none;
+  margin-right: 80px;
+  opacity: 0.75;
+  transition: all 0.3s ease-in-out;
+}
+#footer .map:hover {
+  opacity: 1;
 }/*# sourceMappingURL=globals.css.map */

@@ -516,6 +516,7 @@ section#quote {
   .left {
     grid-area: 2 / 1 / 4 / 6;
   }
+
   .right {
     grid-area: 1 / 7 / 4 / 12;
     padding-top: 80px;
@@ -666,5 +667,20 @@ section#quote {
 
   .div4 {
     grid-area: 4 / 8 / 5 / 12;
+  }
+
+  .map {
+    grid-area: 2 / 1 / 5 / 5;
+    background: $gradientPurple;
+    filter: grayscale(1);
+    padding: 2px;
+    border: none;
+    margin-right: 80px;
+    opacity: 0.75;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

@@ -9,7 +9,7 @@ return (
   {/* ---------------------- Canvas ---------------------- */}
   <CanvasQuote />
 
-  <h3 className="heading">Get your <abbr className='purple'>Free <br /></abbr><abbr className='magenta'>Quote</abbr>.</h3>
+  <h3 className="heading">Get a <abbr className='purple'>Free <br /></abbr><abbr className='magenta'>Quote </abbr><br />in 24hrs!</h3>
 
   <p className='description'>Please feel free to add as much information as possible. The more you tell me, the more
     accurate I can be with

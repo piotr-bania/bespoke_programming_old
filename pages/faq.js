@@ -14,7 +14,8 @@ return (
       provides you with an online space on the World Wide Web and the domain name (a.k.a. URL) is the path to that
       space. They can (and should) be bought from and registered with the same provider *.
 
-      The hosting package is one of the main factors for website speed so it is very important to choose wisely - I would
+      The hosting package is one of the main factors for website speed so it is very important to choose wisely - I
+      would
       be happy to help with it and get everything registered and setup properly. There are quite a few options out there
       but after disappointing experiences with some of the most advertised providers, I came across IONOS (1AND1) many
       years ago and have been using them since for my personal projects and would strongly recommend them to you as
@@ -45,7 +46,8 @@ return (
     <br /><br />
 
     <h4>How does support work after the website launch?</h4>
-    <p>I am proud to say that I have kept long lasting relationships with my clients and I am always on hand to help them
+    <p>I am proud to say that I have kept long lasting relationships with my clients and I am always on hand to help
+      them
       whenever needed with updates and further developments. Those are usually charged on an hourly bases.</p>
   </div>
 

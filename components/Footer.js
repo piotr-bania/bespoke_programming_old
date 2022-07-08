@@ -32,6 +32,12 @@ return (
 
     <div className="gradientPurple rightGradient"></div>
 
+    <div className="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635540.3965482997!2d-0.510463203161823!3d51.52099976314988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1657282542658!5m2!1sen!2suk"
+            width="100%" height="100%" />
+    </div>
+
 </section>
 )
 }
