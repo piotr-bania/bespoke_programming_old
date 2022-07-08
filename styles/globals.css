@@ -77,8 +77,19 @@ a:hover {
 }
 a:focus {
   font-weight: 300;
+  color: #D02670;
+  opacity: 1;
+}
+
+.link {
+  -webkit-text-decoration: underline #697077 2px;
+          text-decoration: underline #697077 2px;
   color: #FFFFFF;
   opacity: 1;
+}
+.link:hover {
+  -webkit-text-decoration: underline #8A3FFC 2px;
+          text-decoration: underline #8A3FFC 2px;
 }
 
 .purple {
@@ -553,7 +564,8 @@ section#quote {
 #footer p {
   margin: 0;
 }
-#footer h3, #footer a {
+#footer h3,
+#footer a {
   font-family: contralto-big;
   font-weight: 600;
   text-transform: lowercase;
@@ -561,9 +573,12 @@ section#quote {
   line-height: 1;
   opacity: 1;
   font-size: 64px;
+  -webkit-text-decoration: underline #697077 5px;
+          text-decoration: underline #697077 5px;
   transition: all 0.3s ease-in-out;
 }
-#footer h3:hover, #footer a:hover {
+#footer h3:hover,
+#footer a:hover {
   -webkit-text-decoration: underline #8A3FFC 5px;
           text-decoration: underline #8A3FFC 5px;
 }

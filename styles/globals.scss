@@ -92,8 +92,18 @@ a {
 
   &:focus {
     font-weight: 300;
-    color: $white;
+    color: $magenta;
     opacity: 1;
+  }
+}
+
+.link {
+  text-decoration: underline $darkGrey 2px;
+  color: $white;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: underline $purple 2px;
   }
 }
 
@@ -631,7 +641,8 @@ section#quote {
     margin: 0;
   }
 
-  h3, a {
+  h3,
+  a {
     font-family: contralto-big;
     font-weight: 600;
     text-transform: lowercase;
@@ -639,6 +650,7 @@ section#quote {
     line-height: 1;
     opacity: 1;
     font-size: 64px;
+    text-decoration: underline $darkGrey 5px;
     transition: all 0.3s ease-in-out;
 
     &:hover {

@@ -197,10 +197,10 @@ return (
         I am experienced with HTML5, CSS3, JavaScript, Node.js, React.js, Next.js. I also have +7 years of experience
         with WordPress.
         <br /><br />
-        My personal portfolio website: <a href="https://piotrbania.dev"><abbr
-            className='purple'>piotrbania.dev</abbr></a>
+        My personal portfolio website: <a href="https://piotrbania.dev" target="_blank" rel="noreferrer"><abbr
+            className='link'>piotrbania.dev</abbr></a>
         <br />
-        GitHub profile: <a href="https://github.com/piotr-bania"><abbr className='purple'>Piotr-Bania</abbr></a>
+        GitHub profile: <a href="https://github.com/piotr-bania" target="_blank" rel="noreferrer"><abbr className='link'>Piotr-Bania</abbr></a>
       </p>
     </div>
 
@@ -212,8 +212,7 @@ return (
         created in order to help local companies with their growth, through a medium of web presence and search engine
         optimization.
         <br /><br />
-        Find out more about my workflow and approach to the projects on the
-        <Link href="/process"><a><abbr className='magenta'>Process Page</abbr></a></Link>.</p>
+        Find out more about my workflow and approach to the projects on the <Link href="/process"><a><abbr className='link'>Process Page</abbr></a></Link>.</p>
     </div>
   </section>
 </div>
