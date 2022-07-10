@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CanvasQuote from '../components/canvas/CanvasQuote'
 import Head from 'next/head'
+import Overlay1 from '../components/overlay/Overlay1'
 
 const quote = () => {
 return (
@@ -13,6 +14,8 @@ return (
     <meta name="description" content="Bespoke Programming | Quote" />
     <link rel="icon" href="/svg/logo.svg" />
   </Head>
+
+  <Overlay1 />
 
   <section id="quoteForm">
 

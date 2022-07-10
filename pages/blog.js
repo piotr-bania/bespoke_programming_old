@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Blog from '/components/Blog'
+import Overlay1 from '../components/overlay/Overlay1'
 
 const blog = () => {
 return (
@@ -14,7 +15,9 @@ return (
         <link rel="icon" href="/svg/logo.svg" />
     </Head>
 
+    <Overlay1 />
     <Blog />
+
 </div>
 )
 }

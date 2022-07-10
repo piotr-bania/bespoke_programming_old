@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Overlay2 from '../components/overlay/Overlay2'
 
 const services = () => {
 return (
@@ -11,6 +12,8 @@ return (
     <meta name="description" content="Bespoke Programming | Services" />
     <link rel="icon" href="/svg/logo.svg" />
   </Head>
+
+  <Overlay2 />
 
   <section className="services">
     <h3>Services.</h3>

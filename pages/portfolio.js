@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Overlay4 from '../components/overlay/Overlay4'
 
 const portfolio = () => {
 return (
@@ -11,6 +12,8 @@ return (
         <meta name="description" content="Bespoke Programming | Portfolio" />
         <link rel="icon" href="/svg/logo.svg" />
     </Head>
+
+    <Overlay4 />
 
     <section className="portfolio">
         <h3>Portfolio.</h3>
