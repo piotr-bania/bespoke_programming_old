@@ -615,41 +615,7 @@ section#quote {
   }
 }
 
-// ------------------------------ Blog ------------------------------
-#blog {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin-top: 120px;
 
-  .heading {
-    grid-area: 1 / 2 / 2 / 6;
-    margin-bottom: 0;
-  }
-
-  .post1 {
-    grid-area: 2 / 3 / 3 / 6;
-  }
-
-  .post2 {
-    grid-area: 2 / 6 / 3 / 9;
-  }
-
-  .post3 {
-    grid-area: 2 / 9 / 3 / 12;
-  }
-}
-
-// ------------------------------ Blog ------------------------------
-#recentPosts {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin-top: 120px;
-
-  .heading {
-    grid-area: 1 / 2 / 2 / 6;
-    margin-bottom: 0;
-  }
-}
 
 // ------------------------------ Canvas ------------------------------
 .canvasHero,

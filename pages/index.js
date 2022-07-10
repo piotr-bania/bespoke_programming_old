@@ -5,7 +5,7 @@ import Image from 'next/image'
 import CanvasHero from '../components/canvas/CanvasHero'
 import CanvasServices from '../components/canvas/CanvasServices'
 import Overlay1 from '../components/overlay/Overlay1'
-import Blog from '../components/Blog'
+import Blog from '../components/blog/Blog'
 
 export default function Home() {
 return (

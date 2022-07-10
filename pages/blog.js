@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Blog from '../components/Blog'
+import Blog from '../components/blog/Blog'
 
 const blog = () => {
 return (
