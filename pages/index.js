@@ -16,7 +16,7 @@ return (
   <Head>
     <title>Bespoke Programming | Freelance Web Developer | London</title>
     <meta name="description" content="Bespoke Programming | Freelance Web Developer | London" />
-    <link rel="icon" href="/svg/logo.svg" />
+    <link rel="icon" href="/svg/Bespoke_Programming_Logo.svg" />
   </Head>
 
   {/* ---------------------- Canvas ---------------------- */}

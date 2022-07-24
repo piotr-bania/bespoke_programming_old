@@ -6,7 +6,7 @@ const Navbar = () => {
 return (
 <section>
     <header>
-        <Link href="/"><Image className='logo' src="/svg/logo.svg" alt="logo" width={60} height={60} /></Link>
+        <Link href="/"><Image className='logo' src="/svg/Bespoke_Programming_Logo.svg" alt="logo" width={60} height={60}/></Link>
         <nav>
             <li>
                 <Link href="/"><a>Home</a></Link>
