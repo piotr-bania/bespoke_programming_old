@@ -11,8 +11,8 @@ void main() {
 vUv = uv;
 vec3 pos = position;
 float noiseFreq = 2.0;
-float noiseAmp = 0.04;
-vec3 noisePos = vec3(pos.x * noiseFreq + uTime, pos.y, pos.z);
+float noiseAmp = 0.1;
+vec3 noisePos = vec3(pos.x * noiseFreq + uTime, pos.y, pos.z) * 0.5;
 pos.z += snoise3(noisePos) * noiseAmp;
 vWave = pos.z;
 gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);

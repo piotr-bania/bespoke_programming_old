@@ -7,6 +7,8 @@ import CanvasServices from '../components/canvas/CanvasServices'
 import Overlay1 from '../components/overlay/Overlay1'
 import Blog from '../components/Blog'
 import Element1 from '../components/webgl_elements/Element1'
+import Element2 from '../components/webgl_elements/Element2'
+import Element3 from '../components/webgl_elements/Element3'
 
 export default function Home() {
 return (
@@ -135,7 +137,19 @@ return (
 
     <div className="div1">
       <div className="project">
-        <Element1/>
+        <a target='blank' href='https://mara-river-capital-redesign.vercel.app'><Element1/></a>
+      </div>
+      <h4><abbr className='purple'>000</abbr> Mara River Capital</h4>
+      <p>Website redesign for a Tanzanian hedge fund.</p>
+      <div className="gradientBorder">
+        <p className='whiteText'>Technologies used:</p>
+        <p>CSS, Sass, React, Next, GLSL, Three.js, React Three Fiber</p>
+      </div>
+    </div>
+
+    <div className="div2">
+      <div className="project">
+      <a target='blank' href='https://piotrbania.dev/'><Element2/></a>
       </div>
       <h4><abbr className='purple'>000</abbr> Personal Portfolio</h4>
       <p>This is my personal portfolio website.</p>
@@ -145,27 +159,15 @@ return (
       </div>
     </div>
 
-    <div className="div2">
-      <div className="project">
-      <Element1/>
-      </div>
-      <h4><abbr className='purple'>001</abbr> Second Project</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-      <div className="gradientBorder">
-        <p className='whiteText'>Technologies used:</p>
-        <p>Html, CSS, Sass, JavaScript, Three.js</p>
-      </div>
-    </div>
-
     <div className="div3">
       <div className="project">
-      <Element1/>
+      <a target='blank' href='http://retirement-center.space/'><Element3/></a>
       </div>
-      <h4><abbr className='purple'>002</abbr> Third Project</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <h4><abbr className='purple'>002</abbr> Nursing Home</h4>
+      <p>Clone of the landing page from Elegant Themes template.</p>
       <div className="gradientBorder">
         <p className='whiteText'>Technologies used:</p>
-        <p>Html, CSS, Sass, JavaScript, Three.js</p>
+        <p>Html, CSS, Sass</p>
       </div>
     </div>
 
