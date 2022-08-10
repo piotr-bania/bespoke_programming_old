@@ -11,15 +11,21 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.12.0",
-    "@react-three/drei": "^9.16.1",
-    "@react-three/fiber": "^8.0.27",
+    "@react-three/drei": "^9.19.7",
+    "@react-three/fiber": "^8.3.1",
+    "babel-plugin-glsl": "^1.0.0",
     "framer-motion": "^6.3.16",
+    "glsl-noise": "^0.0.0",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0",
     "graphql": "^16.5.0",
     "graphql-request": "^4.3.0",
     "gsap": "^3.10.4",
     "next": "12.1.6",
+    "raw-loader": "^4.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.143.0"
   },
   "devDependencies": {
     "eslint": "8.17.0",
