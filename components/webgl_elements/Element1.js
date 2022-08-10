@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { Canvas } from '@react-three/fiber'
+import * as THREE from 'three'
+import testVertexShader from '../../shaders/vertex.glsl'
+import testFragmentShader from '../../shaders/fragment.glsl'
 
 const Element1 = () => {
 return (
