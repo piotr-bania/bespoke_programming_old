@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Overlay4 from '../components/overlay/Overlay4'
+import Element1 from '../components/webgl_elements/Element1'
 
 import * as THREE from 'three'
 import testVertexShader from '../shaders/vertex.glsl'
@@ -21,6 +22,7 @@ return (
 
     <section className="portfolio">
         <h3>Portfolio.</h3>
+        <Element1 />
     </section>
 </div>
 )
