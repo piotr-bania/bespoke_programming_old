@@ -425,7 +425,7 @@ button {
     position: relative;
     top: 40%;
     left: 40%;
-    opacity: 0.25;
+    opacity: 0.66;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 
@@ -662,8 +662,13 @@ section#quote {
 .canvasHero,
 .canvasServices,
 .canvasQuote,
-.canvasServices {
+.canvasServices,
+.canvasElement1 {
   z-index: -1;
+}
+
+.canvasElement1 {
+  aspect-ratio: auto 8 / 6;
 }
 
 // ------------------------------ Footer ------------------------------

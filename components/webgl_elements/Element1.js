@@ -1,19 +1,48 @@
-import React from 'react'
-import Image from 'next/image'
-import { Canvas } from '@react-three/fiber'
+import React, { useRef, Suspense } from 'react'
+import { Canvas, extend, useFrame, useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
-import testVertexShader from '../../shaders/vertex.glsl'
-import testFragmentShader from '../../shaders/fragment.glsl'
+import VertexShader from '../../shaders/vertex.glsl'
+import FragmentShader from '../../shaders/fragment.glsl'
+import { shaderMaterial } from '@react-three/drei'
+
+const WaveMaterial = shaderMaterial({
+uTime: 0,
+uColor: new THREE.Color(0.0, 0.0, 0.0),
+uTexture: new THREE.Texture(),
+vertexShader: VertexShader,
+fragmentShader: FragmentShader
+})
+
+extend({WaveMaterial})
+
+const Wave = () => {
+    const ref = useRef()
+    useFrame(({ clock }) => (ref.current.uTime = clock.getElapsedTime()))
+  
+    const [image] = useLoader(THREE.TextureLoader, [
+      'images/project-1.jpg',
+    ])
+  
+    return (
+      <mesh>
+        <planeBufferGeometry args={[8, 6, 16, 16]} />
+        <waveMaterial uColor={"hotpink"} ref={ref} uTexture={image} />
+      </mesh>
+    )
+  }
 
 const Element1 = () => {
 return (
-<Canvas>
-    <pointLight position={[10, 10, 10]}/>
-    <mesh>
-        <planeBufferGeometry args={[3, 5]}/>
-        <meshStandardMaterial color="#7161F5" />
-    </mesh>
-</Canvas>
+<Canvas className='canvasElement1' camera={{ fov: 25, position: [0, 0, 15] }}
+style={{
+    position: "relative",
+    width: "20vw",
+    height: "auto"
+    }}>
+      <Suspense fallback={null}>
+        <Wave />
+      </Suspense>
+    </Canvas>
 )
 }
 

@@ -6,6 +6,7 @@ import CanvasHero from '../components/canvas/CanvasHero'
 import CanvasServices from '../components/canvas/CanvasServices'
 import Overlay1 from '../components/overlay/Overlay1'
 import Blog from '../components/Blog'
+import Element1 from '../components/webgl_elements/Element1'
 
 export default function Home() {
 return (
@@ -134,7 +135,7 @@ return (
 
     <div className="div1">
       <div className="project">
-        <Image src="/images/project-1.jpg" alt="icon" width={400} height={250} />
+        <Element1/>
       </div>
       <h4><abbr className='purple'>000</abbr> Personal Portfolio</h4>
       <p>This is my personal portfolio website.</p>
@@ -146,7 +147,7 @@ return (
 
     <div className="div2">
       <div className="project">
-        <Image src="/images/project-2.jpg" alt="icon" width={400} height={250} />
+      <Element1/>
       </div>
       <h4><abbr className='purple'>001</abbr> Second Project</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -158,7 +159,7 @@ return (
 
     <div className="div3">
       <div className="project">
-        <Image src="/images/project-1.jpg" alt="icon" width={400} height={250} />
+      <Element1/>
       </div>
       <h4><abbr className='purple'>002</abbr> Third Project</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>

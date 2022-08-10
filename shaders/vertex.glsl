@@ -1,23 +1,19 @@
-uniform vec2 uFrequency;
-uniform float uTime;
+precision mediump float;
 
 varying vec2 vUv;
-varying float vElevation;
+varying float vWave;
 
-void main()
-{
-    vec4 modelPosition = modelMatrix * vec4(position, 1);
+uniform float uTime;
 
-    float elevation = sin(modelPosition.x * uFrequency.x - uTime) * 0.0125;
-    elevation += sin(modelPosition.y * uFrequency.y - uTime) * 0.0125;
+#pragma glslify: snoise3 = require(glsl-noise/simplex/3d);
 
-    modelPosition.z += elevation;
-
-    vec4 viewPosition = viewMatrix * modelPosition;
-    vec4 projectedPosition = projectionMatrix * viewPosition;
-
-    gl_Position = projectedPosition;
-
-    vUv = uv;
-    vElevation = elevation;
+void main() {
+vUv = uv;
+vec3 pos = position;
+float noiseFreq = 2.0;
+float noiseAmp = 0.04;
+vec3 noisePos = vec3(pos.x * noiseFreq + uTime, pos.y, pos.z);
+pos.z += snoise3(noisePos) * noiseAmp;
+vWave = pos.z;
+gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
 }
