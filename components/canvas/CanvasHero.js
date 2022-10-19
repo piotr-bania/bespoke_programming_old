@@ -15,11 +15,11 @@ return (
             height: "150vh"
             }}>
         <ambientLight color="#FFFFFF" intensity={0.05} />
-        <pointLight color="#D0D0D1" intensity={0.25} position={[-2, 0, 2]} />
-        <directionalLight color="#697077" intensity={0.25} position={[-2, 0, 2]} />
+        <pointLight color="#D0D0D1" intensity={0.05} position={[-2, 0, 2]} />
+        <directionalLight color="#697077" intensity={0.05} position={[-2, 0, 2]} />
 
         <NoiseAdvection />
-        <OrbitControls autoRotate autoRotateSpeed={-0.25} />
+        <OrbitControls autoRotate autoRotateSpeed={-0.05} />
     </Canvas>
 </div>
 )
