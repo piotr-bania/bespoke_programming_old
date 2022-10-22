@@ -2,17 +2,17 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    section {
-        grid-template-columns: repeat(12, 1fr);
-        gap: 16px;
-        margin: 40px 120px;
+
+    .canvasHero,
+    .canvasServices,
+    .canvasQuote,
+    .canvasServices,
+    .canvasElement1 {
+        z-index: -1;
     }
 
-    .heading {
-        grid-area: 1 / 2/ 2 / 5;
-        align-self: center;
-        margin-top: 80px;
-        margin-bottom: 80px;
+    .canvasElement1 {
+        aspect-ratio: auto 8 / 6;
     }
 }
 

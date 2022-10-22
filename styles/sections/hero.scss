@@ -2,15 +2,48 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    
+    #hero {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        height: calc(100vh - 80px);
+
+        .div1 {
+            grid-area: 1 / 7 / 2 / 12;
+            display: flex;
+            align-items: flex-end;
+            margin-top: 15vh;
+        }
+
+        .div2 {
+            grid-area: 2 / 2 / 3 / 6;
+            align-self: flex-start;
+
+            p {
+                padding-left: 17px;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .div3 {
+            grid-area: 2 / 11 / 3 / 13;
+            display: flex;
+            align-self: flex-end;
+            align-items: flex-end;
+            justify-content: flex-end;
+            text-transform: uppercase;
+        }
+    }
+
+    .gradientBorder {
+        background: linear-gradient(180deg, $purple 0%, $magenta 100%);
+        background-size: 3px;
+        background-repeat: no-repeat;
+    }
 }
 
 // ------------------------------ Tablet ------------------------------
-@media screen and (min-width: 768) and (max-width: 1023px) {
-
-}
+@media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {
-
-}
+@media screen and (max-width: 767px) {}
