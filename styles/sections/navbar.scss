@@ -1,0 +1,77 @@
+@import '/styles/globals';
+
+section {
+    header {
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+
+        .logo {
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background: $gradientBackground;
+            backdrop-filter: blur(15px);
+
+            li {
+                a {
+                    padding: 0 1vw;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    section {
+        header {
+            top: 40px;
+            padding: 0 120px;
+
+            .menu {
+                display: block;
+            }
+
+            .burger {
+                display: none;
+            }
+        }
+
+        button {
+            padding: 20px 24px;
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {
+    section {
+        header {
+            top: 20px;
+            padding: 0 20px;
+
+            nav {
+                .menu {
+                    display: none;
+                }
+
+                .burger {
+                    display: block;
+                    padding: 0 20vw 0 5vw;
+                }
+            }
+        }
+    }
+}

@@ -21,8 +21,10 @@ $gradientBackgroundFaded: linear-gradient(90deg, rgba(105, 112, 119, 0.5) 0%, rg
 $gradientOverlay: linear-gradient(0deg, rgba(105, 112, 119, 0) 0%, rgba(105, 112, 119, 1) 100%);
 
 // ---------- Fonts ----------
-$header_font: 'AlbraLight';
-$text_font: Alegreya-Regular, sans-serif;
+$header_font: contralto-small,
+sans-serif;
+$text_font: proxima-nova,
+sans-serif;
 
 // ---------- Fluid fonts ----------
 $paragraph: clamp(1rem, 0.43vw + 0.89rem, 1.38rem);
@@ -60,10 +62,10 @@ h2,
 h3,
 h4 {
   font-family: $header_font;
-  font-weight: 100;
+  font-weight: 600;
   font-style: normal;
   color: $white;
-  line-height: 1;
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -81,8 +83,7 @@ h3 {
 
 h4 {
   font-size: $header_4;
-  line-height: 0;
-  margin-top: 35px;
+  line-height: 2;
 }
 
 p {
@@ -95,7 +96,7 @@ a {
   font-family: proxima-nova;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
+  font-size: calc($paragraph - 2px);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $lightGrey;
@@ -205,4 +206,45 @@ label {
   background: $gradientOverlay;
   opacity: 0.25;
   z-index: -1;
+}
+
+// ------------------------------ Button ------------------------------
+.button {
+  background: $gradientPurpleFaded;
+  color: $white;
+  font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc($paragraph - 2px);
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 20px 24px;
+
+  &:hover {
+    background: $gradientPurple;
+  }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {
+  .button {
+    padding: 16px 20px;
+  }
+}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {
+  .button {
+    padding: 12px 16px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: $white;
+  }
 }

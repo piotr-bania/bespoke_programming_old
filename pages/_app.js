@@ -1,6 +1,6 @@
 import '../styles/globals.scss'
 import '../styles/sections/sections.scss'
-import '../styles/sections/header.scss'
+import '../styles/sections/navbar.scss'
 import '../styles/sections/hero.scss'
 import '../styles/sections/my_services.scss'
 import '../styles/sections/my_process.scss'
