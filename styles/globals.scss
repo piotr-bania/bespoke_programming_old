@@ -2,8 +2,8 @@
 @import url("https://use.typekit.net/pgw0ymf.css");
 
 @font-face {
-  font-family: 'OggRegular';
-  src: url(../public/fonts/OggRegular.ttf);
+  font-family: 'AlbraLight';
+  src: url(../public/fonts/AlbraLight.otf);
 }
 
 /* ------------------------------ Variables ------------------------------ */
@@ -21,8 +21,15 @@ $gradientBackgroundFaded: linear-gradient(90deg, rgba(105, 112, 119, 0.5) 0%, rg
 $gradientOverlay: linear-gradient(0deg, rgba(105, 112, 119, 0) 0%, rgba(105, 112, 119, 1) 100%);
 
 // ---------- Fonts ----------
-$header_font: 'OggRegular';
+$header_font: 'AlbraLight';
 $text_font: Alegreya-Regular, sans-serif;
+
+// ---------- Fluid fonts ----------
+$paragraph: clamp(1rem, 0.43vw + 0.89rem, 1.38rem);
+$header_4: clamp(1.25rem, 0.93vw + 1.02rem, 2.06rem);
+$header_3: clamp(1.56rem, 1.75vw + 1.13rem, 3.09rem);
+$header_2: clamp(1.95rem, 3.07vw + 1.19rem, 4.64rem);
+$header_1: clamp(2.44rem, 5.17vw + 1.15rem, 6.96rem);
 
 * {
   box-sizing: border-box;
@@ -53,7 +60,7 @@ h2,
 h3,
 h4 {
   font-family: $header_font;
-  font-weight: 600;
+  font-weight: 100;
   font-style: normal;
   color: $white;
   line-height: 1;
@@ -61,25 +68,25 @@ h4 {
 }
 
 h1 {
-  font-size: 95px;
+  font-size: $header_1;
 }
 
 h2 {
-  font-size: 80px;
+  font-size: $header_2;
 }
 
 h3 {
-  font-size: 75px;
+  font-size: $header_3;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: $header_4;
   line-height: 0;
   margin-top: 35px;
 }
 
 p {
-  font-size: 22px;
+  font-size: $paragraph;
   line-height: 1.4;
   margin-bottom: 0;
 }

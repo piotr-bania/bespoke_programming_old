@@ -10,7 +10,7 @@ const Hero = () => {
             <Overlay1 />
 
             <div className="hero_header">
-                <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development.</h1>
+                <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development</h1>
             </div>
 
             <div className="hero_subheader">
