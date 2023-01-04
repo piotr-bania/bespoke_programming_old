@@ -15,7 +15,7 @@ return (
 
   <Overlay2 />
 
-  <section className="services">
+  <section id='services' className="services">
     <h3>Services.</h3>
   </section>
 </div>

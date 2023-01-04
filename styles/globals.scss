@@ -23,6 +23,7 @@ $gradientOverlay: linear-gradient(0deg, rgba(105, 112, 119, 0) 0%, rgba(105, 112
 html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   list-style-type: none;
 }
 
@@ -35,6 +36,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   margin: auto;
+  user-select: none;
   overflow-x: hidden;
 }
 

@@ -3,95 +3,97 @@ import CanvasQuote from '../components/canvas/CanvasQuote'
 import Head from 'next/head'
 import Overlay1 from '../components/overlay/Overlay1'
 
-const quote = () => {
+const Quote = () => {
 return (
 
 <div>
-  {/* ---------------------- Head ---------------------- */}
+    {/* ---------------------- Head ---------------------- */}
 
-  <Head>
-    <title>Bespoke Programming | Quote</title>
-    <meta name="description" content="Bespoke Programming | Quote" />
-    <link rel="icon" href="/svg/logo.svg" />
-  </Head>
+    <Head>
+        <title>Bespoke Programming | Quote</title>
+        <meta name="description" content="Bespoke Programming | Quote" />
+        <link rel="icon" href="/svg/logo.svg" />
+    </Head>
 
-  <Overlay1 />
+    <Overlay1 />
 
-  <section id="quoteForm">
+    <section id="quoteForm">
 
-    {/* ---------------------- Canvas ---------------------- */}
-    <CanvasQuote />
+        {/* ---------------------- Canvas ---------------------- */}
+        <CanvasQuote />
 
-    <h3 className="heading">Get a <abbr className='purple'>Free <br /></abbr><abbr className='magenta'>Quote
-      </abbr><br />in 24hrs!</h3>
+        <h3 className="heading">Get a <abbr className='purple'>Free <br /></abbr><abbr className='magenta'>Quote
+            </abbr><br />in 24hrs!</h3>
 
-    <p className='description'>Please feel free to add as much information as possible. The more you tell me, the more
-      accurate I can be with
-      your
-      quote.</p>
+        <p className='description'>Please feel free to add as much information as possible. The more you tell me, the
+            more
+            accurate I can be with
+            your
+            quote.</p>
 
-    <div className="gradientPurple"></div>
+        <div className="gradientPurple"></div>
 
-    <form action="https://formsubmit.co/contact@piotrbania.dev" method="POST">
+        <form action="https://formsubmit.co/contact@piotrbania.dev" method="POST">
 
-      <div className="generalInfo">
-        <h4>General Info</h4>
+            <div className="generalInfo">
+                <h4>General Info</h4>
 
-        {/* Name */}
-        <label htmlFor="name">Name</label>
-        <input type="text" id='name' name="name" placeholder="Name" required />
+                {/* Name */}
+                <label htmlFor="name">Name</label>
+                <input type="text" id='name' name="name" placeholder="Name" required />
 
-        {/* Email */}
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email Address" required></input>
+                {/* Email */}
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required></input>
 
-        {/* Contact Number */}
-        <label htmlFor="contactNumber">Contact Number</label>
-        <input type="tel" id="tel" name="tel" placeholder="Telephone Number"></input>
+                {/* Contact Number */}
+                <label htmlFor="contactNumber">Contact Number</label>
+                <input type="tel" id="tel" name="tel" placeholder="Telephone Number"></input>
 
-        {/* Business Overview */}
-        <label htmlFor="businessOverview">Business Overview</label>
-        <textarea id="businessOverview" name="text" placeholder="Business Overview" cols="30" rows="8"></textarea>
+                {/* Business Overview */}
+                <label htmlFor="businessOverview">Business Overview</label>
+                <textarea id="businessOverview" name="text" placeholder="Business Overview" cols="30"
+                    rows="8"></textarea>
 
-        {/* Project Overview */}
-        <label htmlFor="projectOverview">Project Overview</label>
-        <textarea id="projectOverview" name="text" placeholder="Project Overview" cols="30" rows="8"></textarea>
-      </div>
+                {/* Project Overview */}
+                <label htmlFor="projectOverview">Project Overview</label>
+                <textarea id="projectOverview" name="text" placeholder="Project Overview" cols="30" rows="8"></textarea>
+            </div>
 
-      <div className="budget">
-        <h4>What is your Budget?</h4>
+            <div className="budget">
+                <h4>What is your Budget?</h4>
 
-        <label htmlFor="budget">What is your budget?</label>
-        <p><input id="budget" name="radio" type="checkbox"></input> £250 - £499</p>
-        <p><input id="budget" name="radio" type="checkbox"></input> £500 - £999</p>
-        <p><input id="budget" name="radio" type="checkbox"></input> £1,000 - £1,499</p>
-        <p><input id="budget" name="radio" type="checkbox"></input> £1,500 - £2,499</p>
-        <p><input id="budget" name="radio" type="checkbox"></input> £2,500+</p>
+                <label htmlFor="budget">What is your budget?</label>
+                <p><input id="budget" name="radio" type="checkbox"></input> £250 - £499</p>
+                <p><input id="budget" name="radio" type="checkbox"></input> £500 - £999</p>
+                <p><input id="budget" name="radio" type="checkbox"></input> £1,000 - £1,499</p>
+                <p><input id="budget" name="radio" type="checkbox"></input> £1,500 - £2,499</p>
+                <p><input id="budget" name="radio" type="checkbox"></input> £2,500+</p>
 
-        <h4>Will your site require regular updates?</h4>
-        <label htmlFor="updates">Any Updates?</label>
-        <p><input id="updates" name="checkbox" type="radio"></input> Yes</p>
-        <p><input id="updates" name="checkbox" type="radio"></input> No</p>
+                <h4>Will your site require regular updates?</h4>
+                <label htmlFor="updates">Any Updates?</label>
+                <p><input id="updates" name="checkbox" type="radio"></input> Yes</p>
+                <p><input id="updates" name="checkbox" type="radio"></input> No</p>
 
-        <h4>Just a few more bits of information</h4>
+                <h4>Just a few more bits of information</h4>
 
-        {/* Deadline */}
-        <label htmlFor="deadline">Is there a deadline?</label>
-        <textarea id="deadline" name="text" placeholder="Is there a deadline for the project?" cols="30"
-          rows="3"></textarea>
+                {/* Deadline */}
+                <label htmlFor="deadline">Is there a deadline?</label>
+                <textarea id="deadline" name="text" placeholder="Is there a deadline for the project?" cols="30"
+                    rows="3"></textarea>
 
-        {/* Questions */}
-        <label htmlFor="questions">Additional questions</label>
-        <textarea id="questions" name="text" placeholder="Is there anything else you would like to ask?" cols="30"
-          rows="3"></textarea>
+                {/* Questions */}
+                <label htmlFor="questions">Additional questions</label>
+                <textarea id="questions" name="text" placeholder="Is there anything else you would like to ask?"
+                    cols="30" rows="3"></textarea>
 
-        <button type="submit" value="Send">Submit</button>
+                <button type="submit" value="Send">Submit</button>
 
-      </div>
-    </form>
-  </section>
+            </div>
+        </form>
+    </section>
 </div>
 
 )
 }
-export default quote
+export default Quote
