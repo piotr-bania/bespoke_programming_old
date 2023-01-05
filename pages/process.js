@@ -17,7 +17,7 @@ return (
   <Overlay3 />
 
   <section className="process">
-    <h3>Process.</h3>
+    <h3>Process</h3>
   </section>
 </div>
 )

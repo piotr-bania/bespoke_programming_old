@@ -17,7 +17,7 @@ const Hero = () => {
                 <p className='gradientBorder'>I am a web developer who builds custom web-applications right from consulting,
                     development, maintenance and
                     support.</p>
-                <Link href="/quote"><button>Get A Free Quote</button></Link>
+                <Link href="/quote"><button className='button'>Get A Free Quote</button></Link>
             </div>
 
             <div className="hero_scroll">

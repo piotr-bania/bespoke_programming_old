@@ -17,7 +17,7 @@ return (
     <Overlay4 />
 
     <section className="portfolio">
-        <h3>Portfolio.</h3>
+        <h3>Portfolio</h3>
         <Element1 />
     </section>
 </div>

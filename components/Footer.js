@@ -26,12 +26,12 @@ return (
         </div>
 
         <div className="location">
-            <h4>Bespoke Programming</h4><br />
+            <h4>Bespoke Programming</h4>
             <p className='uppercase'>London <br />United Kingdom</p>
         </div>
 
         <div className="hours">
-            <h4>Office Hours</h4><br />
+            <h4>Office Hours</h4>
             <p className='uppercase'>Monday - Friday <abbr className='purple'>⇀</abbr> 09.00-17.00 GMT</p>
             <p className='uppercase'>Saturday - Sunday <abbr className='purple'>⇀</abbr> 09.00-13.00 GMT</p>
         </div>
