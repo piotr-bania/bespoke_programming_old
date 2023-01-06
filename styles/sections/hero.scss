@@ -1,71 +1,85 @@
 @import '/styles/globals';
+section#hero {
+    display: grid;
+
+    .hero_header {
+        position: absolute;
+    }
+
+    .hero_subheader {
+        position: absolute;
+
+        p {
+            padding-left: 17px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .hero_scroll {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        animation: blink 2s linear infinite;
+
+        div {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @keyframes blink{
+            0%{opacity: 0.05;}
+            10%{opacity: 0.1;}
+            45%{opacity: 0.95;}
+            50%{opacity: 1;}
+            55%{opacity: 0.95;}
+            90%{opacity: 0.1;}
+            100%{opacity: 0.05;}
+            }
+
+        p {
+            padding-right: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.gradientBorder {
+    background: linear-gradient(180deg, $purple 0%, $magenta 100%);
+    background-size: 3px;
+    background-repeat: no-repeat;
+}
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
     section#hero {
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
         height: calc(100vh - 80px);
 
         .hero_header {
-            position: absolute;
             top: 20vh;
             left: 50vw;
         }
 
         .hero_subheader {
-            position: absolute;
             left: 240px;
             bottom: 40px;
-            align-self: flex-start;
-
+    
             p {
                 padding-left: 17px;
                 max-width: 480px;
-                margin-top: 0;
-                margin-bottom: 20px;
             }
         }
 
         .hero_scroll {
-            position: absolute;
             right: 120px;
             bottom: 40px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            text-transform: uppercase;
-            animation: blink 2s linear infinite;
-
-            div {
-                display: flex;
-                align-items: flex-end;
-            }
-
-            @keyframes blink{
-                0%{opacity: 0.05;}
-                10%{opacity: 0.1;}
-                45%{opacity: 0.95;}
-                50%{opacity: 1;}
-                55%{opacity: 0.95;}
-                90%{opacity: 0.1;}
-                100%{opacity: 0.05;}
-                }
-
-            p {
-                padding-right: 10px;
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
         }
-    }
-
-    .gradientBorder {
-        background: linear-gradient(180deg, $purple 0%, $magenta 100%);
-        background-size: 3px;
-        background-repeat: no-repeat;
     }
 }
 
@@ -73,4 +87,29 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    section#hero {
+        grid-template-columns: repeat(6, 1fr);
+        height: calc(100vh - 40px);
+
+        .hero_header {
+            top: 30vh;
+            left: 20vw;
+        }
+
+        .hero_subheader {
+            left: 40px;
+            bottom: 100px;
+    
+            p {
+                padding-left: 17px;
+                max-width: 300px;
+            }
+        }
+
+        .hero_scroll {
+            right: 40px;
+            bottom: 40px;
+        }
+    }
+}

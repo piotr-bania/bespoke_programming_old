@@ -24,8 +24,8 @@ return (
     </Head>
 
     {/* ---------------------- Canvas ---------------------- */}
-    <CanvasHero />
-    <CanvasServices />
+    {/* <CanvasHero />
+    <CanvasServices /> */}
 
     {/* ---------------------- Hero ---------------------- */}
     <Hero />
